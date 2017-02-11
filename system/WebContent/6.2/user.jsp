@@ -14,20 +14,23 @@
 				type="text" id="Edt_EmpNames" />
 		</div>
 		<div class="col-sm-6">
-			성별 남 <input type="radio" value="m" /> 여 <input type="radio" value="w" />
+			성별 남 <input type="radio" value="m" id="Rdo_Gender" /> 여 <input type="radio" value="w" id="Rdo_Gender"/>
 		</div>
 		<br />
 	</div>
 	<div class="col-sm-12">
 		부서 <input type="text" readonly="readonly" id="Edt_DeptCode" />
+			<select id="Cmb_DeptName">
+				<option></option>
+			</select>
 	</div>
 	<br />
 	<div class="col-sm-12">
 		<div class="col-sm-6">
-			입사일 <input type="" />
+			입사일 <input type="date" id="Cal_inDate"/>
 		</div>
 		<div class="col-sm-6">
-			퇴사일 <input type="" />
+			퇴사일 <input type="date" id="Cal_OutDate" />
 		</div>
 	</div>
 	<br/><br/>
@@ -50,3 +53,16 @@
 		</table>
 	</div>
 </div>
+
+
+<!--
+최초 메뉴 클릭시 헤더 항목 Clear / List 항목은 조회로 화면 Load
+신규버튼 클릭시 헤더항목 Clear
+조회버튼 클릭시 전체내역 List에 표시
+등록버튼 클릭시 등록여부 메시지 창 표시
+삭제버튼 클릭시 삭제여부 메시지 창 표시
+사원코드는 저장시 내부 채번 이후 표시
+기간은 최초 현재일로 동일하게 표시
+ListBox 의 특정건 클릭시 해당 내역 헤더부분에 표시
+ -->
+
