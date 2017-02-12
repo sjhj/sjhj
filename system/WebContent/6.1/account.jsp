@@ -68,6 +68,9 @@
 				<td><input type="checkbox"/></td>
 				<td><input type="checkbox"/></td>
 			</tr>
+			<tr align="center">
+			<td colspan="3">Authorit</td>
+			</tr>
 		</table>
 		<br/>
 		<input type="button" value="신규/추가" data-target="#myModal" data-toggle="modal"/>
@@ -100,7 +103,8 @@
 				</table>
 			</div>
 			<div class="modal-footer">
-				<input type="button" data-dismiss="modal" value="선택" id="Btn_Close" />
+				<input type="button" data-dismiss="modal" value="선택" id="Btn_Select" />
+				<input type="button" data-dismiss="modal" value="닫기" id="Btn_Close" />
 			</div>
 		</div>
 	</div>

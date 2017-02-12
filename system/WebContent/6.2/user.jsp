@@ -8,16 +8,15 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <div class="container">
-	<div class="col-sm-12">
 		<div class="col-sm-6">
 			사용자 <input type="text" readonly="readonly" id="Edt_EmpCode" /> <input
 				type="text" id="Edt_EmpNames" />
 		</div>
 		<div class="col-sm-6">
-			성별 남 <input type="radio" value="m" id="Rdo_Gender" /> 여 <input type="radio" value="w" id="Rdo_Gender"/>
+			성별 남 <input type="radio" value="m" name="gender" id="Rdo_Gender" /> 여 <input type="radio" value="w" name="gender" id="Rdo_Gender"/>
 		</div>
 		<br />
-	</div>
+	
 	<div class="col-sm-12">
 		부서 <input type="text" readonly="readonly" id="Edt_DeptCode" />
 			<select id="Cmb_DeptName">
@@ -25,14 +24,12 @@
 			</select>
 	</div>
 	<br />
-	<div class="col-sm-12">
 		<div class="col-sm-6">
 			입사일 <input type="date" id="Cal_inDate"/>
 		</div>
 		<div class="col-sm-6">
 			퇴사일 <input type="date" id="Cal_OutDate" />
 		</div>
-	</div>
 	<br/><br/>
 	<div class="col-sm-12">
 		<table border="1" style="width: 100%" class="tb_01">

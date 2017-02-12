@@ -10,10 +10,12 @@
 <div class="container">
 	<div class="col-sm-12">
 		<div class="col-sm-6">
-			그룹등록 <br /> 
+			그룹등록 <br />
+			<div align="right"> 
 			<input type="button" value="추가" id="Btn_MajorAdd" /> 
 			<input type="button" value="삭제" id="Btn_MajorDelete" /> 
 			<input type="button" value="저장" id="Btn_MajorSave" /> 
+			</div>
 			<br />
 			<table border="1" style="width: 100%">
 				<tr align="center">
@@ -28,8 +30,12 @@
 			</table>
 		</div>
 		<div class="col-sm-6">
-			공통코드등록 <br /> <input type="button" value="추가" id="Btn_MinorAdd" /> <input
-				type="button" value="삭제" id="Btn_MinorDelete" /> <br />
+			공통코드등록 <br /> 
+			<div align="right">
+			<input type="button" value="추가" id="Btn_MinorAdd" /> 
+			<input type="button" value="삭제" id="Btn_MinorDelete" />
+			</div>
+			 <br />
 			<table border="1" style="width: 100%">
 				<tr align="center">
 					<td><input type="checkbox" /></td>
