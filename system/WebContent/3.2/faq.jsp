@@ -45,7 +45,8 @@
 		</table>
 	</div>
 	<div align="right" class="col-sm-12">
-	<button id="btn" data-target="#myModal" data-toggle="modal">등록</button>
+	<button id="Btn_Check">조회</button>
+	<button id="Btn_Save" data-target="#myModal" data-toggle="modal">등록</button>
 	</div>
 </div>
 
