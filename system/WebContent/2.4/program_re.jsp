@@ -15,14 +15,15 @@
 			id="Cmb_PLevel"></select> &nbsp; 레벨2 <select id="Cmb_PLevel"></select>
 		<br /> 화면명 <input type="text" />
 	</div>
-	<br />
-	<br />
+	<br /> <br />
 	<div class="col-sm-12">
-		Form <input type="button" value="+" /><input
-			type="button" value="-" />
+		Form <input type="button" value="+" id="form_p" /> <input
+			type="button" value="-" id="form_m" />
 	</div>
+
+
 	<div class="col-sm-12">
-		<table border="1" style="width: 100%">
+		<table border="1" style="width: 100%" id="form_tb">
 			<tr align="center">
 				<td>선택</td>
 				<td>순번</td>
@@ -31,7 +32,7 @@
 				<td>폼ID</td>
 			</tr>
 			<tr align="center">
-				<td><input type="checkbox"/></td>
+				<td><input type="checkbox" /></td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -39,10 +40,9 @@
 			</tr>
 		</table>
 	</div>
-	
+
 	<div class="col-sm-12">
-		Coa <input type="button" value="+" /><input
-			type="button" value="-" />
+		Coa <input type="button" value="+" /><input type="button" value="-" />
 	</div>
 	<div class="col-sm-12">
 		<table border="1" style="width: 100%">
@@ -54,7 +54,7 @@
 				<td>COA 명</td>
 			</tr>
 			<tr align="center">
-				<td><input type="checkbox"/></td>
+				<td><input type="checkbox" /></td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -62,10 +62,9 @@
 			</tr>
 		</table>
 	</div>
-	
+
 	<div class="col-sm-12">
-		SP <input type="button" value="+" /><input
-			type="button" value="-" />
+		SP <input type="button" value="+" /><input type="button" value="-" />
 	</div>
 	<div class="col-sm-12">
 		<table border="1" style="width: 100%">
@@ -76,7 +75,7 @@
 				<td>SP 명</td>
 			</tr>
 			<tr align="center">
-				<td><input type="checkbox"/></td>
+				<td><input type="checkbox" /></td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -85,5 +84,15 @@
 	</div>
 </div>
 
+<script>
+	$("#form_p").click(function() {
+		var row = "<tr align='center'><td><input type='checkbox'/></td><td></td><td></td><td></td><td></td></tr>";
+		$("#form_tb").append(row);
+	});
 
-<!-- 최초 팝업 활성화시 모든 항목  clear -->
+	$("#form_m").click(function() {
+		if ($("#form_tb tr").length >= 2)
+			$("#form_tb tr:last").remove();
+	});
+</script>
+
