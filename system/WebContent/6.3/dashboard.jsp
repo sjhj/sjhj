@@ -34,6 +34,7 @@
 		</table>
 	</div>
 	<div class="col-sm-12">
+	<br/>
 	<table border="1" style="width: 30%">
 			<tr align="center">
 				<td>∞Ë¡§</td>
