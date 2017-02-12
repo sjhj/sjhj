@@ -42,10 +42,10 @@
 	</div>
 
 	<div class="col-sm-12">
-		Coa <input type="button" value="+" /><input type="button" value="-" />
+		Coa <input type="button" value="+" id="coa_p" /><input type="button" value="-" id="coa_m"/>
 	</div>
 	<div class="col-sm-12">
-		<table border="1" style="width: 100%">
+		<table border="1" style="width: 100%" id="coa_tb">
 			<tr align="center">
 				<td>선택</td>
 				<td>순번</td>
@@ -64,10 +64,10 @@
 	</div>
 
 	<div class="col-sm-12">
-		SP <input type="button" value="+" /><input type="button" value="-" />
+		SP <input type="button" value="+" id="sp_p"/><input type="button" value="-" id="sp_m"/>
 	</div>
 	<div class="col-sm-12">
-		<table border="1" style="width: 100%">
+		<table border="1" style="width: 100%" id="sp_tb">
 			<tr align="center">
 				<td>선택</td>
 				<td>순번</td>
@@ -93,6 +93,26 @@
 	$("#form_m").click(function() {
 		if ($("#form_tb tr").length >= 2)
 			$("#form_tb tr:last").remove();
+	});
+	
+	$("#coa_p").click(function() {
+		var row = "<tr align='center'><td><input type='checkbox'/></td><td></td><td></td><td></td><td></td></tr>";
+		$("#coa_tb").append(row);
+	});
+
+	$("#coa_m").click(function() {
+		if ($("#coa_tb tr").length >= 2)
+			$("#coa_tb tr:last").remove();
+	});
+	
+	$("#sp_p").click(function() {
+		var row = "<tr align='center'><td><input type='checkbox'/></td><td></td><td></td><td></td></tr>";
+		$("#sp_tb").append(row);
+	});
+
+	$("#sp_m").click(function() {
+		if ($("#sp_tb tr").length >= 2)
+			$("#sp_tb tr:last").remove();
 	});
 </script>
 
